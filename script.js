@@ -1,2 +1,6 @@
-let challenge1 = "Donat";
-document.getElementById('challenge').innerHTML = challenge1;
+function displaySection (event) {
+    let clicked = event.target.event
+    console.log(event);
+ document.getElementById("clicked").style.display="block";
+}
+

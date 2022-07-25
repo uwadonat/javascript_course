@@ -1,5 +1,14 @@
-#main-section {
-    background-color: blue;
-    text-align: center;
-    height: 600px;
+#main-title {
+    display: flex;
+    justify-content: center;
+}
+
+#headings {
+    display: flex;
+    justify-content: center;
+}
+
+#heading-row td {
+  padding-right: 5px;
+  cursor: pointer;
 }

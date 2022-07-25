@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>javascript course</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <section id="main-section">
-            <h1>Javascript Challenges and solution</h1>
-            <h2 id="challenge">challenge1</h2>
-        </section>
+  <head>
+    <title>javascript course</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="main-title">Javascript Challenges and solution</h1>
+    <header>
+      <table id="headings">
+        <tr id="heading-row">
+          <td id="topics" onclick="{(event) => displaySection(event)}">Topics</td>
+          <td id="Challenges" onclick="displaySection('challenges-section')">Challenges</td>
+          <td id="jobs">Jobs</td>
+          <td id="helps">Helps</td>
+          <td id="announcements">Announcements</td>
+        </tr>
+      </table>
+    </header>
+    <section id="topics-section" style="display: none;">
+        <p>Topic section</p>
+    </section>
+    <section id="challenges-section" style="display: none;">
+        <p>Challenges section</p>
+    </section>
+    <section id="jobs-section" style="display: none;">
+        <p>Jobs section</p>
+    </section>
+    <section id="helps-section" style="display: none;">
+        <p>Helps section</p>
+    </section>
+    <section id="announcements-section" style="display: none;">
+        <p>Announcements section</p>
+    </section>
+
     <script src="script.js"></script>
-    </body>
+  </body>
 </html>
