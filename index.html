@@ -6,32 +6,43 @@
   </head>
   <body>
     <h1 id="main-title">Javascript Challenges and solution</h1>
-    <header>
-      <table id="headings">
-        <tr id="heading-row">
-          <td id="topics" onclick="{(event) => displaySection(event)}">Topics</td>
-          <td id="Challenges" onclick="displaySection('challenges-section')">Challenges</td>
-          <td id="jobs">Jobs</td>
-          <td id="helps">Helps</td>
-          <td id="announcements">Announcements</td>
-        </tr>
-      </table>
-    </header>
-    <section id="topics-section" style="display: none;">
-        <p>Topic section</p>
-    </section>
-    <section id="challenges-section" style="display: none;">
-        <p>Challenges section</p>
-    </section>
-    <section id="jobs-section" style="display: none;">
-        <p>Jobs section</p>
-    </section>
-    <section id="helps-section" style="display: none;">
-        <p>Helps section</p>
-    </section>
-    <section id="announcements-section" style="display: none;">
-        <p>Announcements section</p>
-    </section>
+  
+
+     <!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openHeading(event, 'topics')">Topics</button>
+  <button class="tablinks" onclick="openHeading(event, 'challenges')">Challenges</button>
+  <button class="tablinks" onclick="openHeading(event, 'jobs')">Jobs</button>
+  <Button class="tablinks" onclick="openHeading(event, 'helps')">Helps</Button>
+  <Button class="tablinks" onclick="openHeading(event, 'announcement')">Announcements</Button>
+</div>
+
+<!-- Tab content -->
+<div id="topics" class="tabcontent">
+  <h3>Topics</h3>
+  <p>Here we will have differents topics</p>
+</div>
+
+<div id="challenges" class="tabcontent">
+  <h3>challenges</h3>
+  <p>Here we will ahve different challenges and their solutions</p>
+</div>
+
+<div id="jobs" class="tabcontent">
+  <h3>jobs</h3>
+  <p>Lets have job offers</p>
+</div> 
+<div id="announcement" class="tabcontent">
+  <h3>announcement</h3>
+  <p>If you have any announcement put it here</p>
+</div> 
+  
+
+<div id="helps" class="tabcontent">
+  <h3>helps</h3>
+  <p>you need help on any javascript issue ask here</p>
+</div> 
+  
 
     <script src="script.js"></script>
   </body>
