@@ -27,12 +27,12 @@ function openHeading(evt, headingName) {
 
   // define an object to save challenges, description and solution
 
-  let challenges = { Name: "Binary", Descrition: "Binary number", Sulution: "console.log('1111111')"};
+  let challenges = [{ Name: "Binary", Descrition: "Binary number", Sulution: "console.log('1111111')"}];
 
-  for (const challenge in challenges) {
+ for (let i=0; i<challenges.length;i++)  {
 
-    document.getElementById("title").innerHTML = challenge;
-    console.log(challenge);
+    document.getElementById("title").innerHTML = challenges[i].Name;
+   
   }
 
 
