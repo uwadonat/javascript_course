@@ -22,5 +22,18 @@ function openHeading(evt, headingName) {
   
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(headingName).style.display = "block";
-    evt.currentTarget.className += " active";
+    evt.currentTarget.className += "active";
   } 
+
+  // define an object to save challenges, description and solution
+
+  let challenges = { Name: "Binary", Descrition: "Binary number", Sulution: "console.log('1111111')"};
+
+  for (const challenge in challenges) {
+
+    document.getElementById("title").innerHTML = challenge;
+    console.log(challenge);
+  }
+
+
+ 
