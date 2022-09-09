@@ -44,3 +44,16 @@
   border: 1px solid #ccc;
   border-top: none;
 } 
+
+
+/*Course style*/
+
+.course-content {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  column-gap: 10px;
+}
+
+.course-content-list {
+  list-style-type: none;
+}
